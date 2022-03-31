@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Planner</title>
+		<!-- CSS only -->
+		<link rel="stylesheet" href="CSS/bootstrap-4.6.0-dist/css/bootstrap.css"  crossorigin="anonymous">
+		<link rel="stylesheet" href="CSS/main.css">
+		<script src="java_script/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/cdd144dc35.js" crossorigin="anonymous"></script>
+		<script src="Java_script/tricks.js"></script>
+	</head>
+	<body onload="openNav()">
+		<div id="error">
+			
+		</div>
+		
+		<div id="Container" class="border border-primary" style="width: 100%;">
+			<div>
+			   <div id="mySidebar" class="sidebar">
+				   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				   <a href="php/get_events.php">Get All</a>
+					<a href="#">Services</a>
+					<a href="#">Clients</a>
+					<a href="#">Contact</a>
+			</div>
+				</div>
+				<div id="infor_panel">
+					<h1>Personal Planner</h1>
+					<h4>
+						<strong> Welcome : </strong>
+						<span id="Name"> Samuel Meki</span>
+					</h4>
+					<div id="Budget" class="text-muted" >
+						<span style="float: right">
+							<label for="Currency_label">AMOUNT MKW :  </label>
+							<label id="Amount"> 200,001</label>
+						</span>
+						<span style="float:left;">
+							<label id="month"> </label>
+						</span>
+					</div>
+
+					<div id="lis_Container" class="card border border-dark " >
+							 <!--everything comes here-->
+							<div id='List_Unchecked' class="form-check">
+							   <!-- events come here -->
+								<div id='Unchecked_events' >
+									<h4>
+										Events
+									</h4>
+								</div>
+								<div id='uck_event_list'>
+									<!--- checked Events come here -->
+								</div>
+							</div>
+
+							<div id='section_check'>
+								<div id='checked' class='form-check '>
+									<div id='checked_events' >
+										<label>
+											<i class='fas fa-chevron-down'> </i> Check Events: <span id="Checked_counter"> </span>
+										</label>
+									</div>
+									<div id='ck_event_list'>
+										<!--- Checked Events come here -->
+								</div>
+							</div>
+						</div>
+
+					</div>
+				<div id="Add_to_list" >
+				
+					<a href="javascript:void(0)" id="closeAddW" class="closebtn" style="float: right;color: white;font-size: 36px;margin-top: -17px;">
+						&times;
+					</a><br>
+					
+					<div class="input-group" style=" display: block;padding-left: 10%;    padding-top: 30px;" >
+					
+						<input  id="add_event_Amount" class="pop" type="number" style="width:20%;display:none;" placeholder="Amount" class="form-control" aria-label="Text input">
+						<br><br>
+						<input  id="add_event_Name" type="text" placeholder="Name" style="width:30%"class="form-control" aria-label="Text input">
+						<br>
+						<textarea class="pop" id="add_event_Description" height="500px" style="width:50%;height:20pc;display:none;"></textarea>
+						
+						<div class="input-group-append">
+							<button id="add_event_btn" type="button" class="btn btn-primary">
+								<i class="fas fa-plus-circle text-success"> </i> Add
+							</button>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+</html>
