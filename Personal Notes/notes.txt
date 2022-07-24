@@ -1,0 +1,26 @@
+17-04-2022 06:46AM
+the project has missing files duel to the data change from hard-drive to Github and as
+a result there is a need to recreate come of the files that it needs but it not all bad
+this means a chance to made changes the may be positive, though i should say i plan on maintaining
+the old file structure restructure
+
+i was thinking i would get started on the data base structure, below is a list of the changes
+that i plan on taking:
+
+    *the list items are called items, items this are going to be groups into years then a sub section of months
+    and every month of the years is going to have its own items, once an item for a month is created it will be set on that
+    day, i do not plan on adding functionality for set items to a specific days but have the system keep its own balances and checks
+    to this.
+
+    *we need to keep track of all the money that we are  spending each month, so we have an allocated budget, and when an
+    item is created its properties will include name description and the amount allocated to that item
+
+    *items are also grouped into checked and unchecked items to keep track of what we have already done and what still remains
+    to be done.
+end 17-04-2022 7:09 AM
+
+start 23-05-2022 10:04 AM
+	* updated the old damaged files with saved project files from Hard drive, this is good, it means i do not need to write so
+	  many lines of code that i was dreading to do.
+ 
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Planner</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="CSS/bootstrap-4.6.0-dist/css/bootstrap.css"  crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src="java_script/jquery-3.6.0.js"  crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cdd144dc35.js" crossorigin="anonymous"></script>
+    <script src="Java_script/tricks.js"></script>
+</head>
+<body onload="openNav()">
+<div id="Container" class="border border-primary" style="width: 100%;">
+    <div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="php/get_events.php">Get All</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div id="infor_panel">
+        <h1>Personal Planner</h1>
+        <h4><strong> Welcome : </strong><span id="Name"> Samuel Meki</span></h4>
+        <div id="Budget" class="text-muted" style="float: right">
+                <span><label for="Currency_label">AMOUNT MKW : </label> <label for="Amount"> 200,000</label></span>
+        </div>
+
+            <div id="lis_Container" class="card border border-dark " >
+<!--                everything comes here-->
+            </div><br>
+            <div id="Add_to_list">
+                <div class="input-group" >
+                    <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-primary"><i class="fas fa-plus-circle text-success"></i> Add</button>
+                    </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+
+</body>
+</html>
